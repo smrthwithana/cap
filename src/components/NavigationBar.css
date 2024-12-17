@@ -1,0 +1,56 @@
+nav {
+  background-color: #333; /* Dark background for the nav */
+  color: white; /* White text color */
+  padding: 10px; /* Padding around the nav */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  display: inline-block; /* Display items inline */
+  margin-right: 20px; /* Space between items */
+  position: relative; /* Needed for dropdown positioning */
+}
+
+nav ul li a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Padding around links */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+nav ul li .dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it below the parent */
+  background-color: #444; /* Dark background for dropdown */
+  padding: 10px; /* Padding around dropdown */
+  border-radius: 5px; /* Rounded corners */
+  z-index: 1; /* Ensure it appears above other elements */
+  min-width: 150px; /* Minimum width for dropdown */
+}
+
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+nav ul li .dropdown li {
+  display: block; /* Stack dropdown items vertically */
+  margin: 5px 0; /* Add some spacing */
+}
+
+nav ul li .dropdown li a {
+  padding: 5px 10px; /* Padding for dropdown links */
+  display: block; /* Make the entire area clickable */
+}
+
+nav ul li .dropdown li a:hover {
+  background-color: #666; /* Darker background on hover for dropdown items */
+}
